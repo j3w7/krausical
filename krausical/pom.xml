@@ -6,12 +6,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<!-- <scala.version>2.10</scala.version> -->
-		<scala.version>2.9.2</scala.version>
+		<scala.version>2.10</scala.version>
 	</properties>
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/main/scala</sourceDirectory>
+		<testSourceDirectory>src/test/scala</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -50,8 +50,8 @@
 		<dependency>
 			<!-- scala facade for joda time -->
 			<groupId>org.scalaj</groupId>
-			<artifactId>scalaj-time_${scala.version}</artifactId>
 			<!-- <artifactId>scalaj-time_${scala.version}</artifactId> -->
+			<artifactId>scalaj-time_2.10.0-M7</artifactId> <!-- FIXME should be consistent with ${scala.version} -->
 			<version>0.6</version>
 		</dependency>
 
